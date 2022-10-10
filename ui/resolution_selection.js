@@ -131,7 +131,7 @@ shaka.ui.ResolutionSelection = class extends shaka.ui.SettingsMenu {
           () => this.onTrackSelected_(track));
 
       const span = shaka.util.Dom.createHTMLElement('span');
-      span.textContent = track.height + 'p';
+      span.textContent = track.width + 'p';
       button.appendChild(span);
 
       if (!abrEnabled && track == selectedTrack) {
